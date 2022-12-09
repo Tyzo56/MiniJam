@@ -10,7 +10,7 @@ public class Fish_Spawn : MonoBehaviour
     [SerializeField] float repeatRate;
     private void Start()
     {
-        InvokeRepeating("spawnFish", 2f, repeatRate);
+        InvokeRepeating("SpawnFish", 2f, repeatRate);
     }
 
     private void Update()
@@ -18,8 +18,8 @@ public class Fish_Spawn : MonoBehaviour
         
     }
 
-    void spawnFish()
+    void SpawnFish()
     {
-        Instantiate(FishPrefab, SpawnPoints[0].transform.position, Quaternion.identity);
+        Instantiate(FishPrefab, SpawnPoints[Random.Range(0,4)].transform.position, Quaternion.identity);
     }
 }
