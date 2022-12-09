@@ -16,7 +16,7 @@ public class Fish_Spawn : MonoBehaviour
     
     private void Start()
     {
-        InvokeRepeating("spawnFish", time, Random.Range(minInclusive, maxInclusive));
+        InvokeRepeating("SpawnFish", time, Random.Range(minInclusive, maxInclusive));
     }
 
     private void Update()
@@ -25,7 +25,7 @@ public class Fish_Spawn : MonoBehaviour
         randomSpawnPoint = new Vector3(Random.Range(-2, 2), -0.672f, 6.727f);
     }
 
-    void spawnFish()
+    void SpawnFish()
     {
         Instantiate(FishPrefab, randomSpawnPoint, Quaternion.identity);
     }
