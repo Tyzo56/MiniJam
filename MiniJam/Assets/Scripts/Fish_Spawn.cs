@@ -20,6 +20,6 @@ public class Fish_Spawn : MonoBehaviour
 
     void SpawnFish()
     {
-        Instantiate(FishPrefab, SpawnPoints[Random.Range(0,4)].transform.position, Quaternion.identity);
+        Instantiate(FishPrefab, SpawnPoints[0].transform.position, Quaternion.identity);
     }
 }
