@@ -9,8 +9,8 @@ public class GameLogic : MonoBehaviour
 
     public int score;
 
-    private void OnTriggerEnter(Collider fish)
+    private void Start()
     {
-        score++;
+        
     }
 }
