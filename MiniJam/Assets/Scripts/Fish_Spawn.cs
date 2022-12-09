@@ -22,7 +22,7 @@ public class Fish_Spawn : MonoBehaviour
     private void Update()
     {
         //repeatRate = Random.Range(0.6f, 5f);
-        randomSpawnPoint = new Vector3(Random.Range(-2, 2), -0.672f, 6.727f);
+        randomSpawnPoint = new Vector3(Random.Range(-2f, 2f), -0.672f, 6.727f);
     }
 
     void SpawnFish()
