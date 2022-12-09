@@ -15,9 +15,17 @@ public class FishMovement : MonoBehaviour
     void Update()
     {
         MoveForward();
+        Delete();
     }
     void MoveForward()
     {
         transform.Translate(Vector3.back * speed * Time.deltaTime);
+    }
+    void Delete()
+    {
+        if(transform.position.z <= -10)
+        {
+            GameObject.Destroy(gameObject);
+        }
     }
 }
