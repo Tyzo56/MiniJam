@@ -12,7 +12,7 @@ public class DeleteOnCollision : MonoBehaviour
         GM = go.GetComponent<GameManager>();
     }
     private void OnTriggerEnter(Collider other)
-    {
+    { 
         GM.score++;
         Debug.Log("destroy fish");
         GameObject.Destroy(gameObject);

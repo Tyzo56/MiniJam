@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FishMovement : MonoBehaviour
 {
-    [SerializeField] float speed;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +19,9 @@ public class FishMovement : MonoBehaviour
     void MoveForward()
     {
         transform.Translate(Vector3.back * speed * Time.deltaTime);
+        if(transform.position.z < -11)
+        {
+            GameObject.Destroy(gameObject);
+        }
     }
 }
