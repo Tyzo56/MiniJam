@@ -284,6 +284,7 @@ MonoBehaviour:
   SpawnPoints:
   - {fileID: 1512050261}
   FishPrefab: {fileID: 8561952954217051612, guid: eb7a6912c23cd4148a31fd50c69d8a11, type: 3}
+  EnemyFishPrefab: {fileID: 8561952954217051612, guid: 5daea8da1aeab4289940d2c8d07a8be7, type: 3}
   minInclusive: 0.4
   maxInclusive: 0.8
   time: 0
@@ -977,7 +978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6478092038482123084, guid: 55c09fb52f4e148a48f9eaeb6d2532fb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.79
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6478092038482123084, guid: 55c09fb52f4e148a48f9eaeb6d2532fb, type: 3}
       propertyPath: m_LocalPosition.y
