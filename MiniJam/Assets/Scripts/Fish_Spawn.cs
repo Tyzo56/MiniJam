@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Fish_Spawn : MonoBehaviour
 {
-   public Transform[] SpawnPoints;
-   public GameObject FishPrefab;
+    public Transform[] SpawnPoints;
+    public GameObject FishPrefab;
+    public GameObject EnemyFishPrefab;
 
     //public float repeatRate;
     //These 2 varaiables used for varying spawnrates
@@ -27,7 +28,16 @@ public class Fish_Spawn : MonoBehaviour
 
     void SpawnFish()
     {
-        Instantiate(FishPrefab, randomSpawnPoint, Quaternion.identity);
+        int fishType = Random.Range(0, 5);
+        
+        if(fishType == 0)
+        {
+            Instantiate(EnemyFishPrefab, randomSpawnPoint, Quaternion.identity);
+        }
+        else
+        {
+            Instantiate(FishPrefab, randomSpawnPoint, Quaternion.identity);
+        }
     }
 }
 
