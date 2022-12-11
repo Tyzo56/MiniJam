@@ -19,7 +19,7 @@ public class FishMovement : MonoBehaviour
     void MoveForward()
     {
         transform.Translate(Vector3.back * speed * Time.deltaTime);
-        if(transform.position.z < -11)
+        if(transform.position.z < -15)
         {
             GameObject.Destroy(gameObject);
         }
